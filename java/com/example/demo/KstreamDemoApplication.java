@@ -6,7 +6,6 @@ import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.*;
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.KTable;
-import org.apache.kafka.streams.kstream.Named;
 import org.apache.kafka.streams.kstream.Produced;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,7 +21,7 @@ public class KstreamDemoApplication {
         brook,audi
         rahul,bmw
         mercy,toyota
-        brook,honda   [note, favorite cars for a user could change]
+        brook,honda   [note, favorite car of a user could change]
     */
     static final String FAVORITE_CAR_INPUT_TOPIC = "favorite-car-input";
 
